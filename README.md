@@ -24,6 +24,7 @@ The entire project pipeline is designed for scalability and ease of deployment.
 
 The project is organized as follows:
 
+```
 voice-recognition/
 ├── data/                    # Raw and processed audio data
 │   ├── raw/                 # Raw audio data
@@ -39,17 +40,18 @@ voice-recognition/
 │   └── utils.py               # Utility functions
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
-
+```
 
 ## 🛠️ Installation
 
 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/your-username/voice-recognition.git
-   
-   cd voice-recognition
+   git clone [https://github.com/Arya182-ui/Voice-Recognition-Model]
+```
 
+```bash   
+   cd Voice-Recognition-Model
    ```
 
 ``` bash
@@ -60,9 +62,13 @@ voice-recognition/
 
 ```bash
    src/data_preprocessing.py
+```
 
+```bash
    src/model_training.py
+```
 
+```bash
    src/predict_speaker.py
 ```
 
@@ -77,11 +83,13 @@ Once you have collected enough audio data, run the src/prepare_data.py to proces
 ```bash
 python src/prepare_data.py
 ```
+
 Then, use src/model_training.py to train the Random Forest Classifier on the processed features.
 
 ```bash
 python src/model_training.py
 ```
+
 The trained model will be saved as model/speaker_model.pkl.
 
 ## 🎤 Real-Time Prediction
